@@ -11,6 +11,7 @@ aside {
 
   & .background-img {
     position: absolute;
+    margin-left: auto;
 
     & img {
       max-width: 25rem;
