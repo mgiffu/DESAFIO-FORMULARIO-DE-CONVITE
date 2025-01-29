@@ -1,0 +1,39 @@
+#app {
+  /* display: grid; */
+}
+
+aside {
+  margin: 1rem;
+
+  & .aside-container {
+    position: relative;
+  }
+
+  & .background-img {
+    position: absolute;
+
+    & img {
+      max-width: 25rem;
+      border-radius: .75rem;
+    }
+  }
+
+  & .overlay-container {
+    position: relative;
+    padding: 2rem;
+
+    & img {
+      width: 3rem;
+    }
+
+    & h1 {
+      font: var(--logo);
+      color: var(--pink);
+      padding-block: 1rem .75rem;
+    }
+
+    & p {
+      color: var(--text-heading);
+    }
+  }
+}

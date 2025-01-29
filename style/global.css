@@ -60,3 +60,9 @@
   /* --text-heading: #F9F9F9; */
 
 }
+
+body {
+  font: var(--body-md);
+  color: var(--text-body);
+  background-color: var(--shape-background);
+}
