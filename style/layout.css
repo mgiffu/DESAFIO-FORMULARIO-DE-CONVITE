@@ -1,20 +1,25 @@
 #app {
-  /* display: grid; */
+  display: grid;
+  grid-template-columns: 51.25% 48.75%;
+  overflow: hidden;
+  height: 100vh;
 }
 
 aside {
-  margin: 1rem;
+  margin: 1.25rem 1.25rem 1.25rem 1.25rem ;
+  
 
   & .aside-container {
     position: relative;
+    max-width: 25rem;
+    margin-left: auto;
   }
 
   & .background-img {
     position: absolute;
-    margin-left: auto;
 
     & img {
-      max-width: 25rem;
+      width: 25rem;
       border-radius: .75rem;
     }
   }
@@ -36,5 +41,18 @@ aside {
     & p {
       color: var(--text-heading);
     }
+  }
+}
+
+main {
+  overflow: auto;
+  background-color: var(--shape-body);
+  margin: 1.25rem 1.25rem 1.25rem 0;
+  border-radius: .75rem;
+
+  & .main-container {
+    max-width: 51.25rem;
+    margin-right: auto;
+    padding: 5rem 8.125rem;
   }
 }

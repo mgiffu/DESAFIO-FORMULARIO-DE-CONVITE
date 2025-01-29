@@ -65,4 +65,13 @@ body {
   font: var(--body-md);
   color: var(--text-body);
   background-color: var(--shape-background);
+  overflow: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex:1 
 }
