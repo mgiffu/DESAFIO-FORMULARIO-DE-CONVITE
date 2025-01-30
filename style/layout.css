@@ -3,10 +3,14 @@
   grid-template-columns: 51.25% 48.75%;
   overflow: hidden;
   height: 100vh;
+  justify-content: center;
+  /* max-width: 1280px; */
+  margin-inline: auto;
+  gap: 1.25rem;
 }
 
 aside {
-  margin: 1.25rem 1.25rem 1.25rem 1.25rem ;
+  margin: 1.25rem 0 1.25rem 1.25rem ;
   
 
   & .aside-container {
@@ -49,10 +53,40 @@ main {
   background-color: var(--shape-body);
   margin: 1.25rem 1.25rem 1.25rem 0;
   border-radius: .75rem;
+  max-width: 51.25rem;
+
+  & h1 {
+    padding-bottom: 3rem;
+  }
+
+  & .main-wrapper{
+    width: 35rem;
+
+  }
 
   & .main-container {
     max-width: 51.25rem;
-    margin-right: auto;
     padding: 5rem 8.125rem;
+    margin-inline: auto;
+  }
+
+  & .about-event {
+    
+    & legend {
+      display: flex;
+      align-items: center;
+      font: var(--heading-sm);
+      padding-bottom: 1.5rem;
+    }
+
+    & legend img {
+      width: 1.25rem;
+      padding-right: .75rem;
+    }
+    /* border: none; */
+  }
+
+  & fieldset {
+    max-width: 35rem;
   }
 }

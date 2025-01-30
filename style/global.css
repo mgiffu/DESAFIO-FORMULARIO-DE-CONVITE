@@ -63,9 +63,14 @@
 
 body {
   font: var(--body-md);
-  color: var(--text-body);
+  color: var(--text-heading);
   background-color: var(--shape-background);
   overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .flex {
@@ -74,4 +79,12 @@ body {
 
 .flex-1 {
   flex:1 
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  /* gap: 2rem; */
 }
