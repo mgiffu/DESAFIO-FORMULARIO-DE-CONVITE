@@ -1,0 +1,58 @@
+.toggle {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: .75rem;
+  
+  & .slider {
+    position: relative;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 999px;
+    padding-left: .25rem;
+    border: 1px solid  var(--input-stroke);
+    transition: 0.3s;
+  }
+
+  & .slider::before {
+    content: "";
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: var(--input-stroke);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.3s;
+  }
+
+  & input:checked + .slider { /* Para alterar a cor de fundo do slider */
+    background-color: var(--brand-light);
+  }
+
+  & input:checked + .slider::before { /* Para alterar a cor do slider (bolinha) e informar o quanto ele "andara" para a direita*/
+    background: white;
+    margin-left: 2.25rem;
+  }
+
+
+}
+
+.toggle .label { /* Alterando o texto */
+  display: inline-block;
+  width: 4rem; /* Garante espaço suficiente para o texto */
+  text-align: left; /* Mantém alinhado */
+}
+
+.toggle .label::before {
+  content: "Escuro"; /* Texto padrão */
+}
+
+.toggle input:checked + .slider + .label::before {
+  content: "Claro"; /* Texto ao ativar */
+}
+
+
+& .toggle input { /* Esconder input padrão */
+  display: none;
+}
