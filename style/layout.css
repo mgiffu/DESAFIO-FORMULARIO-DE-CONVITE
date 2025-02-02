@@ -55,6 +55,10 @@ main {
   border-radius: .75rem;
   max-width: 51.25rem;
 
+  & label {
+    color: var(--text-body);
+  }
+
   & h1 {
     padding-bottom: 3rem;
   }
@@ -87,7 +91,7 @@ main {
   }
 
   & legend img {
-    width: 1.25rem;
+    width: 36px;
     padding-right: .75rem;
   }
 
