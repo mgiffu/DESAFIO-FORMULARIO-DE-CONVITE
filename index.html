@@ -82,7 +82,7 @@
                       <input type="radio" name="event-type" id="event-type">
                       </div>
                   </div>
-                </div>
+                </div> 
 
                 <div class="input-wrapper flex-1">
                   <label for="location">Local</label>
@@ -92,9 +92,8 @@
 
               <div class="textarea-wrapper">
                 <label for="description">Descrição</label>
-                <textarea name="description" id="description" rows="5"
-                placeholder="Escreva sobre os detalhes do evento">
-              </textarea>
+                <textarea name="description" id="description" rows="5" placeholder="Escreva sobre os detalhes do evento">
+                </textarea>
               </div>
               
             </fieldset>
@@ -229,6 +228,33 @@
                   </div>
                 </div>
               </div>
+            </fieldset>
+
+            <fieldset class="contact-details">
+              <legend>
+                <img src="assets/icons/contact.svg" alt="">
+                Dados para contato
+              </legend>
+
+              <div class="input-wrapper">
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" placeholder="Nome completo">
+                <img src="assets/icons/circle-alert.svg" alt="">
+                <span>Campo obrigatório</span>
+              </div>
+
+              <div class="flex gap-1">
+                <div class="input-wrapper flex-1">
+                  <label for="email">E-mail</label>
+                  <input type="text" id="email" name="email" placeholder="exemplo@email.com">
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="phone">Telefone</label>
+                  <input type="text" id="phone" name="phone" placeholder="(99) 99999-9999">
+                </div>
+              </div>
+              
             </fieldset>
           </form>
         </div>
