@@ -95,10 +95,37 @@ main {
     padding-right: .75rem;
   }
 
+  & .customization {
+    border: none;
+  }
+
   & .event-theme {
     & .radio-wrapper {
       padding-block: 1rem 1.75rem;
     }
+  }
+
+  & .other-options {
+    & .switch {
+      width: 11rem;
+      margin-right: 1rem;
+
+      & label {
+        margin-bottom: 1rem;
+      }
+    }
+
+    & .droped {
+      & label {
+        margin-bottom: 1rem;
+      }
+
+      & span {
+        padding-bottom: 1rem;
+      }
+    }
+
+
   }
   
 }
