@@ -124,8 +124,19 @@ main {
         padding-bottom: 1rem;
       }
     }
+  }
 
+  & .contact-details {
+    border: none;
+    margin-bottom: 3rem;
 
+    & #phone-email {
+      margin-top: 1rem;
+    }
+  }
+
+  & #split-bar {
+    border: 1px solid var(--input-stroke);
   }
   
 }

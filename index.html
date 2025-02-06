@@ -238,12 +238,14 @@
 
               <div class="input-wrapper">
                 <label for="name">Nome</label>
-                <input type="text" id="name" name="name" placeholder="Nome completo">
-                <img src="assets/icons/circle-alert.svg" alt="">
-                <span>Campo obrigatório</span>
+                <input type="text" id="name" name="name" class="name" placeholder="Nome completo" pattern=".*\s+.*" required>
+                <div id="error-message" class="flex">
+                  <img src="assets/icons/circle-alert.svg" alt="">
+                  <span>Campo obrigatório</span>
+                </div>
               </div>
 
-              <div class="flex gap-1">
+              <div id="phone-email" class="flex gap-1">
                 <div class="input-wrapper flex-1">
                   <label for="email">E-mail</label>
                   <input type="text" id="email" name="email" placeholder="exemplo@email.com">
@@ -256,6 +258,8 @@
               </div>
               
             </fieldset>
+
+            <div id="split-bar"></div>
           </form>
         </div>
 

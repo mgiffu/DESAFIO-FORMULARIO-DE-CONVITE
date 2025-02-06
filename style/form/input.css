@@ -9,7 +9,7 @@ input, textarea, select {
   color: var(--input-placeholder);
   padding-left: .8rem;
   background-color: var(--input-base);
-  margin: .8rem 0 1rem 0;
+  margin: .75rem 0 1rem 0;
 
   &:hover,
   &:focus {
@@ -24,4 +24,43 @@ input {
 
 label {
   display: block;
+}
+
+.contact-details {
+  & span {
+    font: var(--body-xs);
+    color: var(--danger);
+    margin-left: .5rem;
+  }
+
+  .name {
+    appearance: unset;
+    width: 100%;
+    border: none;
+    border-radius: .5rem;
+    font: var(--body-md);
+    color: var(--input-placeholder);
+    outline: 1px solid var(--danger);
+    margin: .75rem 0 .5rem 0;
+    padding: .75rem 0 .75rem 1rem;
+
+    &:hover,
+    &:focus {
+      outline: 1px solid var(--brand-light);
+    }
+
+    &:valid {
+      outline: 1px solid var(--input-stroke);
+    }
+  }
+
+  #error-massage {
+    opacity: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .name:valid + #error-message {
+    visibility: hidden;
+    opacity: 0;
+  }
 }
