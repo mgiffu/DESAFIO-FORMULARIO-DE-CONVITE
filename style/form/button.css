@@ -1,0 +1,19 @@
+button {
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  background-color: var(--brand-dark);
+  width: 11rem;
+  height: 3rem;
+  border-radius: .5rem;
+  margin-left: auto;
+  cursor: pointer;
+  
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-light);
+  }
+}
