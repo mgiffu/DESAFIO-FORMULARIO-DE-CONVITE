@@ -34,7 +34,7 @@ textarea {
   border-radius: .5rem;
   font: var(--text-body);
   color: var(--input-placeholder);
-  width: 100%;
+  width: 35rem;
   height: 8.5rem;
   margin-block: .75rem 3rem;
 }

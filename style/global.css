@@ -68,6 +68,11 @@ body {
   overflow: hidden;
 }
 
+.container {
+  max-width: 35rem;
+  margin-inline: auto;
+}
+
 img {
   max-width: 100%;
   height: auto;
