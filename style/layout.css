@@ -5,6 +5,7 @@
   height: 100vh;
   justify-content: center;
   /* max-width: 1280px; */
+  width: 100%;
   margin-inline: auto;
   gap: 1.25rem;
 }
@@ -139,4 +140,8 @@ main {
     border: 1px solid var(--input-stroke);
   }
   
+  & .footer {
+    margin-block: 2.5rem;
+    border: none;
+  }
 }
