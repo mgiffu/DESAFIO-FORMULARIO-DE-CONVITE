@@ -90,6 +90,26 @@ img {
   gap: 1rem;
 }
 
-.gap-2 {
-  /* gap: 2rem; */
+/* Estiliza a barra de rolagem no Chrome, Edge e Safari */
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: var(--input-base);
+  border-radius: .75rem;
+}
+
+/* Parte móvel da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background: var(--input-stroke);
+  border-radius: .75rem;
+}
+
+/* Estiliza a barra de rolagem no Firefox */
+* {
+  scrollbar-width: auto; /* Pode ser `auto`, `thin` ou `none` */
+  scrollbar-color: var(--input-stroke) var(--input-base);
 }
